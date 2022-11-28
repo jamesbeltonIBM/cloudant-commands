@@ -1,0 +1,9 @@
+Use this curl command to upload a bulk document into cloudant. 
+
+In this case, the file 'data.json' contains the documents that are posted to the database.
+
+curl -X POST \
+-H "Content-type: application/json" \
+-H 'Authorization: '"$TOKEN"'' \
+-d@data.json "$URL/newdb/_bulk_docs"
+
