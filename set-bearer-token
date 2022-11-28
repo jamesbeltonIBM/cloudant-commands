@@ -6,7 +6,7 @@ curl -k -X POST \
 --header "Content-Type: application/x-www-form-urlencoded" \
 --header "Accept: application/json"  \
 --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey"  \
---data-urlencode "apikey="<<apikey-value>>"  \
+--data-urlencode "apikey=<<apikey-value>>"  \
 "https://iam.cloud.ibm.com/identity/token"
 
 The command will generate output that looks a bit like this (the "access_token" string will be much longer!):
