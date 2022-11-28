@@ -1,0 +1,9 @@
+Issue the following CLI command to create a new set of Cloudant database credentials:
+
+ibmcloud resource service-key-create <<cred-name>> Manager --instance-name <<cloudant-instance-name>>
+
+Set the value of the output 'url' to the $URL environment variable:
+
+export URL="https://xxxxxxxx"
+
+$URL will be used to connect to the database, along with $TOKEN (bearer credential)
