@@ -1,0 +1,6 @@
+Use this code to update the record with the id <id> and rev <rev> in the database 'newdb'
+
+curl -X POST \
+-H "Content-type: application/json" \
+-H 'Authorization: '"$TOKED"''
+-d '{"_id":"<id>","_rev":"<rev>","x":10}' "$URL/newdb"
