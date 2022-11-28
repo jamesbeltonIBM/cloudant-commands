@@ -1,0 +1,5 @@
+If you know the ID, you can select a record (replace <id> with the record ID:
+
+curl \
+-H 'Authorization: '"$TOKEN"'' \
+"$URL/newdb/<id>"
