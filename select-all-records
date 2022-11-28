@@ -1,0 +1,6 @@
+This command will select all records in the cloudant database 'newdb'
+
+curl \
+-H 'Authorization: '"$TOKEN"''\
+"$URL/newdb/_all_docs?include_docs=true"
+
