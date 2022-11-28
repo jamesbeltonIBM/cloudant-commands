@@ -1,0 +1,9 @@
+This curl command provide an example means to insert a new document into a Cloudant database called 'newdb'. The document contents is on the '-d' line,
+between the quotes.
+
+
+curl -X POST \
+    -H "Content-type: application/json" \
+    -H 'Authorization: '"$TOKEN"''
+    -d '{"x":1}' \
+    "$URL/newdb"
