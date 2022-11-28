@@ -1,0 +1,5 @@
+Use this command to delete a document with the id <id> and rev <rev> in the database'newdb'
+
+curl -X DELETE \
+-H 'Authorization: '"$TOKEN"'' \
+"$URL/newdb/<id>?rev=<rev>"
