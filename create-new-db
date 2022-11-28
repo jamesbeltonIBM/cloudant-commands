@@ -1,0 +1,5 @@
+This command creates a new database (in this case, called 'newdb' in the Cloudant instance. Remeber to set your $URL and bearer $TOKEN value first...
+
+curl -X \
+PUT -H 'Authorization: '"$TOKEN"'' \
+"$URL/newdb"
